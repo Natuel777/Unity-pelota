@@ -22,7 +22,9 @@ public class movement : MonoBehaviour
         input = new Vector3(Input.GetAxis("Horizontal"),0,Input.GetAxis("Vertical"));
         rb.AddForce(input*moveSpeed);
 
-        if(transform.position.y<-2){Respawn();}
+        if(transform.position.y<-2){
+            Respawn();
+        }
     }
 
     void Respawn(){
